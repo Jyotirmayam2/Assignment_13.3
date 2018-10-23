@@ -1,0 +1,53 @@
+'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+
+    //friends(array of names)
+        var friendObj1 = ["alex","Ravi","Venus"];
+        var friendObj2 = ["Raj","Shiv","Shan"]
+        var friendObj3 = ["Ganesh","Loki","TChalla"];
+
+    // college ( another object with details like name, city, pincode)
+        var college1 = [{"College Name" : "aTEST eng college","city" : "City1","Pin": 77895}];
+        var college2 = [{"College Name" : "bTEST eng college","city" : "City2","Pin": 89788}];
+        var college3 = [{"College Name" : "cTEST eng college","city" : "City3","Pin": 65488}];
+        
+    // Every student have name,age,weight,height,friends, college 
+        var student = [
+            {
+                "Name" : "Ravi",
+                "Age" : "21",
+                "Weight" : "49 kg",
+                "Height" : "149 cm",
+                "friends" : friendObj1,
+                "College" : college1
+            },
+            {
+                "Name" : "Venus",
+                "Age" : "23",
+                "Weight" : "54 kg",
+                "Height" : "158 cm",
+                "friends" : friendObj2,
+                "College" : college2
+            },
+            {
+                "Name" : "Tchalla",
+                "Age" : "19",
+                "Weight" : "44 kg",
+                "Height" : "167 cm",
+                "friends" : friendObj3,
+                "College" : college3
+            }
+        ]
+        console.log("Json subject is: ");
+        console.log(student)
+    </script>
+</body>
+</html>
